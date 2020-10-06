@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@import url(font-awesome.min.css);
+
+@import url("https://fonts.googleapis.com/css?family=Scope+One|Trocchi");
+
+
+
+.body {
+
+  background-color: #ebedef;
+
+}
+
+.card {
+
+  height: 15.813em;
+
+  width: 18.052em;
+
+}
+
+
+
+.theme {
+
+  border-radius: 0.25em;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 0.125em 0.25em 0 rgba(61, 75, 100, 0.08);
+
+}
