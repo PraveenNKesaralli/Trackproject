@@ -35,6 +35,10 @@
       flex-direction:row;
       padding-top: 1.2em;
   
-      
-  
-  }
+       }
+       label{
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+       .container-create{
+           background-color: #f4f4f4;
+       }

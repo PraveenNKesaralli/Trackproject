@@ -1,0 +1,165 @@
+.line{
+    margin: 0;
+    padding-left: 1.6em;
+    padding-top:1.3em ;
+
+}
+p{
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.options-container{
+    display: flex;
+  flex-wrap: nowrap;
+  padding-left: 1.6em ;
+}
+.options-container >div{
+    background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  flex-grow: 1;
+
+  justify-content: space-evenly;
+
+}
+.hp-body{
+    display: flex;
+flex-wrap: nowrap; 
+padding-top: 1.5em;   
+}
+
+.line1-hp{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 1.6em;
+
+}
+.line1-hp >div{
+line-height: 2.2;
+
+color: rgb(173, 171, 166);
+
+}
+
+.line2-hp{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 1.6em;
+
+}
+.line2-hp >div{
+    line-height: 2.2;
+    
+ }
+
+ .line3-hp{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 7em;
+ }
+ .line3-hp >div{
+     line-height: 2.2;
+     color: rgb(173, 171, 166);
+ }
+    
+ .line4-hp{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 1.6em;
+ }
+ .line4-hp >div{
+     line-height: 2.2;
+ }
+
+ .line5-hp{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 7em;
+ }
+ .line5-hp >div{
+     line-height: 2.2;
+     color: rgb(173, 171, 166);
+ }
+
+ .line6-hp{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 5.6em;
+ }
+ .line6-hp >div{
+     line-height: 2.2;
+ }
+ .sijo >label{
+
+     margin: 0;
+     padding: 0rem;
+ }
+ .sijo >img{
+
+    width: 50px;
+    height: 20px;
+    margin: 0;
+    padding-left: 0;
+    border: 0;
+ }
+ .sijo2 >img{
+
+    width: 50px;
+    height: 20px;
+    margin: 0;
+    padding-left: 0;
+    border: 0;
+ }
+ .sijo >label{
+
+    margin: 0;
+    padding: 0rem;
+ }
+
+ .line6-hp >div >label{
+     color: blue;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .description-container{
+     display: flex;
+     justify-content: space-between;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     padding-left: 1.6em;
+     padding-top: 1.6em;
+
+ }
+ .description-container >div >h3{
+
+    color:rgb(73, 72, 71) ;
+ }
+ .attach{
+     padding-left: 1.6em;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color:rgb(73, 72, 71) ;
+     padding-top: 1.6em;
+ }
+ .attach >input{
+    border-width:50%;
+    width: 100%;
+    border-style: dotted;
+    background-color: white;
+    
+
+
+}
+.activity-container{
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 1.6em;
+    padding-left: 1.6em;
+}
+.separater{
+    color:rgb(73, 72, 71);
+}
+
+.act-list {
+    display: flex;
+    justify-content: space-between;
+    
+    
+    flex-direction: row;
+}

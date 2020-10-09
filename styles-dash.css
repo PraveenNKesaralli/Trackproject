@@ -1,6 +1,33 @@
 .dheader-container{
-    padding-top: 2.6em;
-        width: 70%;
+    padding-top: 1.6em;
+        width: 1200px;
         display:flex;
         justify-content: space-between;
+        
+
 }
+.left2 {
+    float:left;
+    width:45px;
+    padding-right:1em;
+    margin: 0;
+    padding-left: 1em;
+    
+
+}
+.right1 {
+    float:right;
+    margin: 0;
+    width:100px;
+    padding-left: 0;
+}
+.dside{
+display:flex;
+
+}
+.graph{
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+}
+
