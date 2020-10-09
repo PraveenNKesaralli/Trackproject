@@ -1,0 +1,40 @@
+.main-container-create{
+    display: flex;
+    flex-direction: row;
+    
+   justify-content: flex-start;
+    padding-top: 3em;
+    align-content: center;
+    flex-basis: 50%
+    
+}
+
+
+.first{
+    padding-top: 3em;
+      justify-content: space-between;
+      font-size: 18px;
+      flex-wrap: wrap;
+      font-style: inherit;
+      width: 100%;
+  }
+  
+  
+  .second{
+      padding-top: 3em;
+      justify-content: space-between;
+      font-size: 18px;
+      flex-wrap: wrap;
+      font-style: inherit;
+      width: 100%;
+  }
+  .h2{
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 1.4em;
+      flex-direction:row;
+      padding-top: 1.2em;
+  
+      
+  
+  }

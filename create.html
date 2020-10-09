@@ -1,64 +1,114 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Create</title>
         <link rel="stylesheet" href="C:\Users\Windows\VS REPO wts\Trackproject\styles.css">
+        <link rel="stylesheet" href="C:\Users\Windows\VS REPO wts\Trackproject\style-create.css">
 
     </head>
     <body>
+
         <div class="container">
             <div class="header-container">
-                <div class= "logo-container">
-                    
-                    <img src="C:\Users\Windows\VS REPO wts\Trackproject\Images\logo.svg"  alt="logo" >
-                    
-                    
-                </div>
-                <div class="search-container">
-                    
+                <div class="logo-and-search">
+                
+                    <div class= "logo-container">
+                    <img src="C:\Users\Windows\VS REPO wts\Trackproject\Images\logo.svg."  alt="logo" > 
+                
+                     </div>
+                    <div class="search-container">
+                        <diiv class="left">
+                        <img src="C:\Users\Windows\VS REPO wts\Trackproject\Images\icon_search.svg" alt="search">
+                        </diiv>
+                        <div class="right">
                     <input type="text" placeholder= "search..." >
+                    </div>
+
+                    </div>
+                </div>    
+             
+                <div class="icon-container-head">
+                    <div>
+                     <img src="C:\Users\Windows\VS REPO wts\Trackproject\Images\noti.svg" alt="notification">
+                   </div>
+                   <div>
+                      <img src="C:\Users\Windows\VS REPO wts\Trackproject\Images\sijo.svg" alt="profile">
+                   </div>
                 </div>
-            </div> 
-            <div class="icon-container-head">
-                <img src="" alt="notification">
-                <img src="\C:\Users\Windows\VS REPO wts\Trackproject\Images\Sijo.svg" alt="profile">
-                
             </div>
-        </div>
-<div class="body-container">
-    <div class="side-nav-container">
-        <div class="side-nav-links">
+
+
+            <div class="body-container">
+               <div class="side-nav-container">
+                   <div class="side-nav-links">
+                      <div class="side-links">
+                           <div class="left"> 
+                            <img src="C:\Users\Windows\VS REPO wts\Trackproject\Images\Dashboard.svg" alt="DashBoard">
+                            </div>
+                            <div class="right">
+                                <font size="3"
+                                face="arial"
+                                color="#9575cd"> 
+                                  Dashboard 
+                              </font> 
+                            </div>
+                        </div>
+
             <div class="side-links">
-                <ul>
-                    <li>
-                    <img src="C:\Users\Windows\VS REPO wts\Trackproject\Images\Dashboard.svg" alt="DashBoard">
-                    Dashboard </li>
-                    <li>
-                <img src="C:\Users\Windows\VS REPO wts\Trackproject\Images\Issues.svg" alt="Issues">
-               Issues</li>
-               <li>
-               <img src="C:\Users\Windows\VS REPO wts\Trackproject\Images\Create.svg" alt="Create">
-               Create</li>
-
-                </ul>
-                
-
+                <div class="left">      
+                <img src="C:\Users\Windows\VS REPO wts\Trackproject\Images\issues.svg" alt="Issues">
+                </div>
+                <div class="right"> 
+                    <font size="3"
+                    face="arial"
+                    color="#9575cd"> 
+                      Issues 
+                  </font> 
+                </div> 
             </div>
 
+               <div class="side-links"> 
+                    <div class="left">              
+                        <img src="C:\Users\Windows\VS REPO wts\Trackproject\Images\Create.svg" alt="Create">
+                    </div>
+                    <div class="right">
+                        <font size="3"
+                    face="arial"
+                    color="#9575cd"> 
+                      Create
+                  </font> 
+                    </div>
+                </div>   
         </div>
+    </div>
+    
+
+
+    <div class="main-header">
+        <div class="h2">
+        <font size="6"
+        face="arial"
+        color="black"> 
+          Create
+      </font> 
+      </div>
+    </div>
+            
         <div class="main-container-create">
-            <h2>Create</h2>
-            <header>
+            <div class="first">
                 <div>
-                    <label>Title:</label><br>
-                    <textarea name="Title" placeholder="title..."></textarea>
-                </div></header>
-            <div class="First">
+                         <label>Title:</label><br>
+                          <input type ="text" placeholder="Enter Title">
+                 </div>
                 <div>
                     <label>Type:</label><br>
-                    <select name="Type">
-                        <option value="disabled"></option>
-
-                    </select>
+                    
+                    
+                    <input type= "text" >
+                    
+                    
+                    <img src="C:\Users\Windows\VS REPO wts\Trackproject\Images\Select Dropdown.svg" >
+                    
                 </div>
                 <div>
                     <label>Priority:</label><br>
@@ -94,7 +144,7 @@
             <br> <br>
             <br>
             
-                <div class="Second">
+                <div class="second">
                     <div >
                         <label>Status:</label><br>
                         <input type="text" >
@@ -114,7 +164,7 @@
                     <div>
                         <label>Assignee:</label><br>
                         <input type= "text" ><img src="C:\Users\Windows\VS REPO wts\Trackproject\Images\Select Dropdown.svg" >
-                        </select>
+                        
                     </div>
                     
                     <div>
@@ -128,9 +178,15 @@
                     </div>
                     
                     <div>
+                        
                         <label>Attachment:</label><br>
-                        <input type="file" ><br>
-                        <br>
+                        
+                            <img src="C:\Users\Windows\VS REPO wts\Trackproject\Images\upload.svg" alt="search">
+                            
+
+                        <input type="text" placeholder= "Drop files to attach" >
+                        
+                        
 
                     </div>
                     <div>
@@ -139,3 +195,8 @@
                 </div>
             
         </div>
+       
+</div>
+</div>
+</body>
+</html>

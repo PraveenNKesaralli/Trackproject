@@ -1,0 +1,6 @@
+.dheader-container{
+    padding-top: 2.6em;
+        width: 70%;
+        display:flex;
+        justify-content: space-between;
+}
