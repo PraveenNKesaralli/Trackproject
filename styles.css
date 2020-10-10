@@ -66,14 +66,11 @@
     justify-content: flex-start;
     align-items: center;
     background-color: rgb(8, 34, 59);
+    height: 1400px;
     }
     
 
-    .main-container{
-        display: flex;
-        padding-top: 2.6em;
-        justify-content: space-between;
-    }
+    
     
     
 
@@ -106,6 +103,13 @@
         
         h3{
             margin:0
+        }
+        .main-container{
+            display: flex;
+            padding-top: 1.3em;
+            justify-content: space-between;
+            
+            
         }
         
         
@@ -164,16 +168,20 @@ font{
     justify-content: space-between;
     padding-top: 3em;
 }
-.first-row{
+.row{
     display: flex;
-    width: 440px;
+    width: 400px;
     background-color: lavender;
     justify-content: space-evenly;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+height: 1350px;
+padding-right: 1.5em;
 }
-.first-row >div >h3{
+.row >div >h3{
     justify-content: center;
     align-items: center;
+    padding-left: 1.6em;
+    padding: top 1em;
 }
 
 .card{
@@ -182,7 +190,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: center;
     
     display:flexbox;
-height: 300px;
+height: 250px;
     width: 400px;
     margin: 10px;
     
@@ -194,7 +202,7 @@ height: 300px;
     justify-content: space-between;
 font-size: 0.9em;
 padding-top:1em;
-padding-bottom: 1em;
+
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 margin: 1em;
@@ -227,15 +235,30 @@ margin: 1em;
     padding-right: 1em;
 }
 
-.status >div{
-    background-color:red;
-  width: 100px;
+
+
+.priority-check{
+
+    align-items: center;
+    width: 100px;
   margin: 0px;
   text-align: center;
   line-height: 30px;
-  font-size: 10px;
+  font-size: 15px;
   color: antiquewhite;
   border-top: 20px;
+}
+
+.priority-check >label{
+    background-color: red;
+  
+}
+
+
+
+.priority-check >label3{
+    background-color: green;
+   
 }
 .status >label{
     color:rgb(173, 171, 166) ;
@@ -253,3 +276,4 @@ margin: 1em;
     padding-top: 0.6em;
     border: 0;
 }
+
