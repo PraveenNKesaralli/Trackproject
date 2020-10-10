@@ -94,15 +94,16 @@ color: rgb(173, 171, 166);
      padding: 0rem;
  }
  .sijo >img{
-
+    position: relative;
     width: 50px;
     height: 20px;
     margin: 0;
     padding-left: 0;
     border: 0;
+    left: 0px;
  }
  .sijo2 >img{
-
+position: relative;
     width: 50px;
     height: 20px;
     margin: 0;
@@ -140,6 +141,7 @@ color: rgb(173, 171, 166);
  .attach >input{
     border-width:50%;
     width: 100%;
+    line-height: 1.6em;
     border-style: dotted;
     background-color: white;
     
@@ -147,7 +149,7 @@ color: rgb(173, 171, 166);
 
 }
 .activity-container{
-    display: flex;
+       
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 1.6em;
     padding-left: 1.6em;
@@ -158,8 +160,41 @@ color: rgb(173, 171, 166);
 
 .act-list {
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-start;
+    width: 100%;
+    padding-top: 1.6em;
+    flex-wrap: nowrap;
     
+    }
+
+    .act-list >div{
+        padding-right: 2.5em;
+    }
+hr{
+    width: 100%;
+    justify-content: flex-start;
     
-    flex-direction: row;
+}
+
+.commenthp-cantainer{
+  padding-left: 1.6em;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.comment-label {
+padding-bottom: 0.5em;
+    color:rgb(173, 171, 166); 
+}
+
+.comment-box{
+    
+    background-color: #f1f1f1;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    justify-content: flex-start;
+    
 }

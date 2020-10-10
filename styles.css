@@ -4,7 +4,7 @@
 }
  
 .container{
-    background-color: lavenderblush;
+    background-color:mintcream;
     border-left: mintcream;
     margin-left: 2%;
 }
@@ -28,14 +28,14 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: rgba(245, 247, 244, 0.918);
+    background-color:mintcream;
 }
 .logo-and-search{
     display: flex;
     justify-content: right;
     align-self: flex-start;
     margin: 0;
-    background-color:mintcream;
+    background-color:white;
    
 }
 
@@ -70,13 +70,11 @@
     
 
     .main-container{
-        
+        display: flex;
         padding-top: 2.6em;
-        width: 70%;
-        display:flex;
         justify-content: space-between;
-        
     }
+    
     
 
     .height-100{
@@ -139,7 +137,7 @@
 .h1{
     padding-left: 1.4em;
     padding-right: 1.6em;
-    display: flex;
+
 
 }
 input{
@@ -150,15 +148,108 @@ font{
     border:0;
 }
 
-
-
-
-
-
- 
 .title{
     display: flex;
     width:80%;
 }
 
+.side-header >label{
 
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.body-subcontainer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3em;
+}
+.first-row{
+    display: flex;
+    width: 440px;
+    background-color: lavender;
+    justify-content: space-evenly;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.first-row >div >h3{
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    
+    display:flexbox;
+height: 300px;
+    width: 400px;
+    margin: 10px;
+    
+    
+
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+font-size: 0.9em;
+padding-top:1em;
+padding-bottom: 1em;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+margin: 1em;
+
+}
+.card-header >div >label{
+    color: rgb(173, 171, 166);
+    align-items: center;
+    
+}
+.card-body{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 1em;
+    padding-right: 1em;;
+}
+
+.card-body >label{
+    color:rgb(173, 171, 166) ;
+    flex-wrap: wrap;
+    padding-bottom: 0.3em;
+    padding-top: 0.7em;
+    font-size: 0.9em;
+}
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.status >div{
+    background-color:red;
+  width: 100px;
+  margin: 0px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 10px;
+  color: antiquewhite;
+  border-top: 20px;
+}
+.status >label{
+    color:rgb(173, 171, 166) ;
+    padding-bottom: 1em;
+}
+
+.assign-color{
+    color:rgb(173, 171, 166) ;
+}
+.sijo >img{
+    width: 60px;
+    height: 30px;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 0.6em;
+    border: 0;
+}
