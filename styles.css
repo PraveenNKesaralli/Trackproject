@@ -7,6 +7,7 @@
     background-color:mintcream;
     border-left: mintcream;
     margin-left: 2%;
+    
 }
 
 
@@ -17,7 +18,7 @@
     padding: 0%;    
     align-items: center;
     height: 60px;
-    background-color:mintcream;
+    background-color:white;
     width: 95%;
 
 }
@@ -25,10 +26,10 @@
 
 .body-container{
     height:90vh;
-    display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     background-color:mintcream;
+    display: flex;
+    
 }
 .logo-and-search{
     display: flex;
@@ -36,7 +37,7 @@
     align-self: flex-start;
     margin: 0;
     background-color:white;
-   
+   height: 60px;
 }
 
 .icon-container-head{
@@ -66,7 +67,7 @@
     justify-content: flex-start;
     align-items: center;
     background-color: rgb(8, 34, 59);
-    height: 1400px;
+    height: 1250px;
     }
     
 
@@ -104,12 +105,18 @@
         h3{
             margin:0
         }
-        .main-container{
-            display: flex;
-            padding-top: 1.3em;
+      
+
+        .issue-header-container{
+            padding-top: 0em;
+            padding-left: 0.5em;
+            width: 1200px;
+            display:flex;
             justify-content: space-between;
-            
-            
+            margin: 0;
+            height: 50px;
+    border: 0;
+
         }
         
         
@@ -140,7 +147,7 @@
 
 .h1{
     padding-left: 1.4em;
-    padding-right: 1.6em;
+    
 
 
 }
@@ -167,21 +174,36 @@ font{
     display: flex;
     justify-content: space-between;
     padding-top: 3em;
+    flex-direction: column;
+}
+.body-card-container{
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: mintcream;
+    padding-left: 1.4em;
 }
 .row{
     display: flex;
-    width: 400px;
+    width: 375px;
     background-color: lavender;
-    justify-content: space-evenly;
+    justify-content: space-around;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-height: 1350px;
-padding-right: 1.5em;
+height: 1150px;
+
+
 }
-.row >div >h3{
+.row >div >label{
     justify-content: center;
     align-items: center;
-    padding-left: 1.6em;
-    padding: top 1em;
+    padding-left: 2em;
+    padding: top 3em;
+    padding-bottom: 3em;
+    font-size: 9;
+    font-weight: 549;
+    margin-top: 3em;
+
 }
 
 .card{
@@ -190,8 +212,8 @@ padding-right: 1.5em;
     justify-content: center;
     
     display:flexbox;
-height: 250px;
-    width: 400px;
+height: 200px;
+    width: 375px;
     margin: 10px;
     
     
@@ -225,12 +247,18 @@ margin: 1em;
     flex-wrap: wrap;
     padding-bottom: 0.3em;
     padding-top: 0.7em;
-    font-size: 0.9em;
+    font-size: 0.8em;
+}
+.card-body >h3{
+
+    font-size:1em ;
+    
+    
 }
 .card-footer{
     display: flex;
     justify-content: space-between;
-    padding-top: 1.5em;
+    padding-top: 0.5em;
     padding-left: 1em;
     padding-right: 1em;
 }
@@ -275,5 +303,14 @@ margin: 1em;
     padding-left: 0;
     padding-top: 0.6em;
     border: 0;
+}
+.sijo-name >label1{
+    color:rgb(173, 171, 166) ;
+    font-size: 0.6em;
+    margin: 0;
+    padding-top: 0%;
+}
+.Developer{
+    display: flex;
 }
 
