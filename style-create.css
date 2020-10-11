@@ -1,32 +1,75 @@
+.Separate-create{
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.title{
+font-size: 18px;
+    padding-top: 3em;
+    padding-left: 1.4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.title >input{
+    width: 1350px;
+      height: 4em;
+      
+}
+
+
+
+
 .main-container-create{
     display: flex;
     flex-direction: row;
-    
+    padding-left: 4em;
    justify-content: flex-start;
-    padding-top: 3em;
+    padding-top: 1em;
     align-content: center;
-    flex-basis: 50%
+    flex-basis: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
     
 }
 
 
 .first{
-    padding-top: 3em;
-      justify-content: space-between;
+    padding-top: 1em;
+    
+    padding-right: 4em;
       font-size: 18px;
       flex-wrap: wrap;
       font-style: inherit;
-      width: 100%;
+      
   }
+  .first >div  >input{
+      width: 500px;
+      height: 2.5em;
+  }
+  .first >div{
+      padding-bottom: 1em;
+  }
+  .second >div >input{
+      width: 500px;
+      height: 2.5em;
+      
+}
+.second >div{
+    padding-bottom: 1em;
+}
+
   
   
   .second{
-      padding-top: 3em;
-      justify-content: space-between;
+      padding-top: 1em;
+      
       font-size: 18px;
       flex-wrap: wrap;
       font-style: inherit;
-      width: 100%;
+    
   }
   .h2{
       display: flex;
@@ -39,6 +82,9 @@
        label{
            font-family: Verdana, Geneva, Tahoma, sans-serif;
        }
-       .container-create{
-           background-color: #f4f4f4;
+       
+
+       .attach-image{
+        background: url('C:\Users\Windows\VS REPO wts\Trackproject\Images\upload.svg') top left no-repeat;
+
        }
