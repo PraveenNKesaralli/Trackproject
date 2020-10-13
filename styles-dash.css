@@ -3,7 +3,7 @@
         width: 1200px;
         display:flex;
         justify-content: space-between;
-        
+        background-color: lawngreen;
 
 }
 .left2 {
@@ -31,3 +31,31 @@ display:flex;
     position: absolute;
 }
 
+.dash-row{
+    display: flex;
+    width: 400px;
+    background-color: lavender;
+    justify-content: space-evenly;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+height: 1350px;
+padding-right: 1.5em;
+}
+
+.row >div >h3{
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.6em;
+    padding: top 1em;
+}
+
+.dash-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.date{
+     color: rgb(173, 171, 166); 
+}
+header{
+    background-color: lawngreen;
+}
