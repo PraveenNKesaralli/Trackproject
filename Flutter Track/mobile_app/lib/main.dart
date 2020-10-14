@@ -8,11 +8,44 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Welcome to Flutter',
       home: Scaffold(
-        body: Center(
-          child: Text('TRADENAPE'),
-        ),
+        body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Text(
+            'TRADENAPP',
+            style: TextStyle(fontSize: 40, color: Colors.lightBlueAccent),
+          ),
+          Image.asset('asstes/welcome.png'),
+          new Container(
+            margin: const EdgeInsets.all(20),
+            child: SizedBox(
+              width: 800,
+              height: 50,
+              child: RaisedButton(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(18.0),
+                ),
+                onPressed: () {},
+                child: Text('Login'),
+                color: Colors.blue,
+              ),
+            ),
+          ),
+          Container(
+            margin: const EdgeInsets.all(20),
+            child: SizedBox(
+              width: 800,
+              height: 50,
+              child: RaisedButton(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(18.0),
+                ),
+                onPressed: () {},
+                child: Text('Sign up'),
+                color: Colors.blue,
+              ),
+            ),
+          ),
+        ]),
       ),
     );
   }
