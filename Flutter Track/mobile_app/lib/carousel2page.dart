@@ -84,12 +84,12 @@ class _MyHomePageState extends State<MyHomePage> {
                         margin: const EdgeInsets.all(0),
                         width: 600.0,
                         child: Image.asset(
-                          "assets/welcome.png",
+                          "assets/carousel2.png",
                           fit: BoxFit.contain,
                         ),
                       ),
                       Text(
-                        'Find services near you',
+                        'Customize your needs',
                         textAlign: TextAlign.center,
                         style: style.copyWith(
                             color: Colors.blue[800],
@@ -97,8 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       SizedBox(height: 10),
                       Text(
-                        'Search for local and international services and browse between them',
-                        textAlign: TextAlign.center,
+                        'Ask what you want through our instant customized request',
                       ),
                     ])),
                 loginButon,
