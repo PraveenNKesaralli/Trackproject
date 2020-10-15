@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:mobile_app/login_page.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -8,6 +10,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      routes: {
+        MyHomePage.route: (context) => MyHomePage(),
+        LoginPage.route: (context) => LoginPage(),
+      },
       title: 'Tradenapp Homepage',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -19,7 +25,7 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
-
+  static String route = 'Welcome';
   final String title;
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -37,7 +43,9 @@ class _MyHomePageState extends State<MyHomePage> {
       child: MaterialButton(
         minWidth: MediaQuery.of(context).size.width,
         padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, LoginPage.route);
+        },
         child: Text("Login",
             textAlign: TextAlign.center,
             style: style.copyWith(
