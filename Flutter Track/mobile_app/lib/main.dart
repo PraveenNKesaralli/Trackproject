@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:mobile_app/login_page.dart';
+import 'package:mobile_app/sign_up_page1.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
       routes: {
         MyHomePage.route: (context) => MyHomePage(),
         LoginPage.route: (context) => LoginPage(),
+        SignupPage1.route: (context) => SignupPage1(),
       },
       title: 'Tradenapp Homepage',
       theme: ThemeData(
@@ -60,7 +62,9 @@ class _MyHomePageState extends State<MyHomePage> {
       child: MaterialButton(
         minWidth: MediaQuery.of(context).size.width,
         padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, SignupPage1.route);
+        },
         child: Text("Sign Up",
             textAlign: TextAlign.center,
             style: style.copyWith(
