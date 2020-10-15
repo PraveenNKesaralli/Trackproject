@@ -80,9 +80,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 SizedBox(
                     height: 400.0,
                     child: ListView(children: [
-                      Image.asset(
-                        "assets/welcome.png",
-                        fit: BoxFit.contain,
+                      Container(
+                        margin: const EdgeInsets.all(0),
+                        width: 600.0,
+                        child: Image.asset(
+                          "assets/welcome.png",
+                          fit: BoxFit.contain,
+                        ),
                       ),
                       Text(
                         'Find services near you',
@@ -109,6 +113,14 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {},
+        label: Text(
+          'Skip',
+          style: TextStyle(color: Colors.lightBlue[700]),
+        ),
+        backgroundColor: Colors.white,
       ),
     );
   }
