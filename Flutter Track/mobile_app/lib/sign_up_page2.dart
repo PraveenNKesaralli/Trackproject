@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter/cupertino.dart';
-import 'package:mobile_app/sign_up_page2.dart';
+import 'package:circular_check_box/circular_check_box.dart';
 
-class SignupPage1 extends StatefulWidget {
-  static String route = 'Signup1';
-  SignupPage1({Key key, this.title}) : super(key: key);
+class SignupPage2 extends StatefulWidget {
+  static String route = 'SignupPage2';
+  SignupPage2({Key key, this.title}) : super(key: key);
 
   final String title;
   @override
-  _SignupPage1State createState() => _SignupPage1State();
+  _SignupPage2State createState() => _SignupPage2State();
 }
 
-class _SignupPage1State extends State<SignupPage1> {
+class _SignupPage2State extends State<SignupPage2> {
   TextStyle style = TextStyle(fontFamily: 'Montserrat', fontSize: 20.0);
-
+  bool selected = true;
   @override
   Widget build(BuildContext context) {
     final nameField = TextField(
@@ -46,7 +46,39 @@ class _SignupPage1State extends State<SignupPage1> {
       ),
     );
 
-    final getotpButton = Material(
+    final passwordField = TextField(
+      obscureText: true,
+      style: TextStyle(fontSize: 15.0),
+      decoration: InputDecoration(
+        contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+        labelText: "PASSWORD",
+        enabledBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Colors.grey),
+        ),
+        focusedBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Colors.grey),
+        ),
+        suffixIcon: Icon(Icons.visibility_sharp),
+      ),
+    );
+
+    final confirmpwdField = TextField(
+      obscureText: true,
+      style: TextStyle(fontSize: 15.0),
+      decoration: InputDecoration(
+        contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+        labelText: "CONFIRM PASSWORD",
+        enabledBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Colors.grey),
+        ),
+        focusedBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Colors.grey),
+        ),
+        suffixIcon: Icon(Icons.visibility_sharp),
+      ),
+    );
+
+    final signupButton = Material(
       elevation: 5.0,
       borderRadius: BorderRadius.circular(30.0),
       color: Colors.blue[800],
@@ -54,40 +86,7 @@ class _SignupPage1State extends State<SignupPage1> {
         minWidth: MediaQuery.of(context).size.width,
         padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
         onPressed: () {},
-        child: Text("Get OTP",
-            textAlign: TextAlign.center,
-            style: style.copyWith(
-                color: Colors.white, fontWeight: FontWeight.bold)),
-      ),
-    );
-
-    final otpField = TextField(
-      obscureText: false,
-      style: TextStyle(fontSize: 15.0),
-      decoration: InputDecoration(
-        contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-        labelText: "ENTER OTP",
-        enabledBorder: UnderlineInputBorder(
-          borderSide: BorderSide(color: Colors.grey),
-        ),
-        focusedBorder: UnderlineInputBorder(
-          borderSide: BorderSide(color: Colors.grey),
-        ),
-      ),
-    );
-
-    final verifyotpButton = Material(
-      elevation: 5.0,
-      borderRadius: BorderRadius.circular(30.0),
-      color: Colors.blue[800],
-      child: MaterialButton(
-        minWidth: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-        onPressed: () {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => SignupPage2()));
-        },
-        child: Text("Verify OTP",
+        child: Text("SIGN UP",
             textAlign: TextAlign.center,
             style: style.copyWith(
                 color: Colors.white, fontWeight: FontWeight.bold)),
@@ -118,46 +117,53 @@ class _SignupPage1State extends State<SignupPage1> {
         child: Container(
           color: Colors.white,
           child: Padding(
-            padding: const EdgeInsets.all(36.0),
+            padding: const EdgeInsets.fromLTRB(30.0, 30.0, 30.0, 0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 nameField,
                 SizedBox(
-                  height: 25.0,
+                  height: 15.0,
                 ),
                 emailField,
-                SizedBox(height: 25.0),
-                getotpButton,
+                SizedBox(height: 15.0),
+                passwordField,
                 SizedBox(
                   height: 15.0,
                 ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      margin: const EdgeInsets.fromLTRB(0, 20.0, 20.0, 10.0),
-                      child: Text(
-                        'VERIFY EMAIL/PHONE',
-                        style: style.copyWith(
-                            color: Colors.blue[800],
-                            fontWeight: FontWeight.bold,
-                            fontSize: 17.0),
-                      ),
-                    ),
-                    SizedBox(height: 10.0),
-                    otpField,
-                    SizedBox(height: 10.0),
-                    verifyotpButton,
-                    SizedBox(height: 15.0),
-                    Text(
-                      'Change email/phone number',
-                      style: TextStyle(color: Colors.blue[800]),
-                    ),
-                  ],
+                confirmpwdField,
+                SizedBox(height: 10.0),
+                ListTile(
+                  leading: CircularCheckBox(
+                      value: this.selected,
+                      checkColor: Colors.white,
+                      activeColor: Colors.blue[100],
+                      inactiveColor: Colors.redAccent,
+                      disabledColor: Colors.grey,
+                      onChanged: (val) => this.setState(() {
+                            this.selected = !this.selected;
+                          })),
+                  title: Text(
+                    "I agree with all terms and conditions",
+                    style: TextStyle(fontSize: 15),
+                  ),
+                  onTap: () => this.setState(() {
+                    this.selected = !this.selected;
+                  }),
                 ),
+                SizedBox(
+                  height: 10.0,
+                ),
+                signupButton,
+                SizedBox(height: 15.0),
+                Text(
+                  'Already have an account? Login',
+                  style: TextStyle(color: Colors.blue[800]),
+                ),
+                SizedBox(
+                  height: 50.0,
+                )
               ],
             ),
           ),
