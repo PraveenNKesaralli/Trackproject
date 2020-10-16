@@ -141,7 +141,7 @@ class _SinfoPageState extends State<SinfoPage> {
             'lake, which warms to 20 degrees Celsius in the summer. Activities '
             'enjoyed here include rowing, and riding the summer toboggan run.',
             softWrap: true,
-            style: TextStyle(fontSize: 16, color: Colors.pink[200]),
+            style: TextStyle(fontSize: 16, color: Colors.indigo[400]),
           ),
         ],
       ),
