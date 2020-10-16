@@ -88,7 +88,7 @@ class _SignupPage2State extends State<SignupPage2> {
         padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
         onPressed: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => HomePage()));
+              context, MaterialPageRoute(builder: (context) => SinfoPage()));
         },
         child: Text("SIGN UP",
             textAlign: TextAlign.center,
