@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter/cupertino.dart';
 import 'package:circular_check_box/circular_check_box.dart';
+import 'package:mobile_app/home_page.dart';
 
 class SignupPage2 extends StatefulWidget {
   static String route = 'SignupPage2';
@@ -85,7 +86,10 @@ class _SignupPage2State extends State<SignupPage2> {
       child: MaterialButton(
         minWidth: MediaQuery.of(context).size.width,
         padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => HomePage()));
+        },
         child: Text("SIGN UP",
             textAlign: TextAlign.center,
             style: style.copyWith(
