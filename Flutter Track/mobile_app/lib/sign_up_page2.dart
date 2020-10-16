@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter/cupertino.dart';
 import 'package:circular_check_box/circular_check_box.dart';
-import 'package:mobile_app/home_page.dart';
+import 'package:mobile_app/service-info.dart';
 
 class SignupPage2 extends StatefulWidget {
   static String route = 'SignupPage2';
