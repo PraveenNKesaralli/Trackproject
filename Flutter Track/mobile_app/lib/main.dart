@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:mobile_app/home_page.dart';
 import 'package:mobile_app/login_page.dart';
 import 'package:mobile_app/sign_up_page1.dart';
 
@@ -127,7 +127,10 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => HomePage()));
+        },
         label: Text(
           'Skip',
           style: TextStyle(color: Colors.blue[800]),
