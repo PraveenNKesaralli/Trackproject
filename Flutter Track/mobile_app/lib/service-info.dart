@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SinfoPage extends StatefulWidget {
-  static String route = 'HomePage';
+  static String route = 'service info';
 
   SinfoPage({Key key, this.title}) : super(key: key);
   final String title;
