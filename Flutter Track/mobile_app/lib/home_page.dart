@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mobile_app/categories.dart';
 import 'package:mobile_app/service-info.dart';
 
 class HomePage extends StatefulWidget {
@@ -35,7 +36,12 @@ class _HomePageState extends State<HomePage> {
           SizedBox(
             width: 40,
           ),
-          Icon(Icons.search),
+          IconButton(
+              icon: Icon(Icons.search),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Categories()));
+              }),
           SizedBox(
             width: 40,
           ),
