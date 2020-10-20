@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_app/menu_drawer.dart';
 
 class SinfoPage extends StatefulWidget {
   static String route = 'service info';
@@ -152,13 +153,8 @@ class _SinfoPageState extends State<SinfoPage> {
         appBar: AppBar(
           title: Text('SERVICE INO'),
           backgroundColor: Colors.blue[800],
-          leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: Icon(Icons.arrow_back_ios_rounded),
-          ),
         ),
+        drawer: DrawerPage(),
         body: ListView(
           children: [
             Image.asset(
