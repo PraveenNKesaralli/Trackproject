@@ -659,6 +659,26 @@ class _CardDetailsState extends State<CardDetails> {
                 SizedBox(height: 10),
                 attachfield(),
                 SizedBox(height: 10),
+                Container(
+                  child: FlatButton(
+                    minWidth: 70,
+                    onPressed: () => {},
+                    color: Colors.cyan[100],
+                    padding: EdgeInsets.all(10.0),
+                    child: Row(
+                      children: <Widget>[
+                        SvgPicture.asset('assets/Comment.svg'),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Text(
+                          "Comment",
+                          style: TextStyle(fontSize: 18),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
