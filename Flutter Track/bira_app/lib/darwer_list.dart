@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:bira_app/main.dart';
+import 'package:bira_app/create.dart';
 
 class DrawerPage extends StatelessWidget {
   final bool isSelected = false;
@@ -8,7 +9,7 @@ class DrawerPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Container(
-        color: Colors.purple[900],
+        color: Colors.blueGrey[900],
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
@@ -18,15 +19,16 @@ class DrawerPage extends StatelessWidget {
             ListTile(
               leading: SvgPicture.asset(
                 'assets/close.svg',
-                height: 20,
+                height: 15,
                 width: 25,
+                color: Colors.white,
               ),
               onTap: () {
                 Navigator.of(context).pop();
               },
               title: Text(
                 'Menu',
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.white, fontSize: 20),
               ),
             ),
             Ink(
@@ -80,7 +82,11 @@ class DrawerPage extends StatelessWidget {
                     color: Colors.purple,
                   ),
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pop();
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => CreatePage()));
+                },
               ),
             ),
           ],
