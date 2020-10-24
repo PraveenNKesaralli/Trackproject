@@ -1,3 +1,4 @@
+import 'package:bira_app/card_details.dart';
 import 'package:bira_app/darwer_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -42,7 +43,11 @@ class _MyHomePageState extends State<MyHomePage> {
             clipBehavior: Clip.antiAlias,
             elevation: 5.0,
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => CardDetails()));
+              },
               child: Column(
                 children: [
                   Container(
