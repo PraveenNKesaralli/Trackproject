@@ -1,3 +1,4 @@
+import 'package:link_tree_demo/linksPage.dart';
 import 'package:flutter/material.dart';
 
 import 'package:link_tree_demo/main.dart';
@@ -64,7 +65,7 @@ class _SignupPageState extends State<SignupPage> {
         minWidth: 270,
         padding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         onPressed: () {
-          //  Navigator.pushNamed(context, LoginPage.route);
+          Navigator.pushNamed(context, LinksPage.route);
         },
         child: Text("Register",
             textAlign: TextAlign.center,
